@@ -1,10 +1,24 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <input type="button" value="Los Mejores Del Mes" name="Boton los mejores del mes menu" onclick="location.href='http://www.google.cl'" />  <input type="button" value="Búsqueda Avanzada" name="boton busqueda avanzada menu" onclick="location.href='http://www.google.cl'" /> <input type="button" value="Contacto" name="boton contacto inicio" onclick="location.href='http://www.google.cl'" />
-</div>
-<div id="busqueda-Basica">
 
+
+<div>
+    <div><h4>Búsqueda Basica</h4></div>
+    <h6>selecciona region: </h6> <div id="region-de-busqueda">
+      <input type="text" list="Regiones" />
+        <datalist id="Regiones">
+            <option>Metropolitana</option>
+            <option>Los Lagos</option>
+        </datalist>
+    </div>
+    <div id="Introduce-cine">        
+        <form name="ejemplo" action="22-html5-search-input.php" method="POST">
+            Introduce el término de búsqueda: <input type="search" name="busqueda"><br>
+            <input type="submit" value="Enviar">
+        </form></div>
 </div>
+
+
