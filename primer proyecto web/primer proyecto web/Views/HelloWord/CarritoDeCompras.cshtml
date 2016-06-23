@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "CarritoDeCompras";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript" >
+    function cambiarValor(nodo){
+        var valor = nodo.value;
+        alert("el valor es: " + valor);
+        nodo.value = "Terminado";
+        nodo.setAttribute("disabled","disabled")
+    }
+</script>
+<h2>CarritoDeCompras</h2>
+<p>escoger producto: </p>
+<div>
+    
+    <div>
+        <div class="divProducto"></div>
+        <p>producto1</p>
+
+    </div>
+    <div class="divImg">
+        <div class="flotador" style="background-color:pink;width:100px;height:100px"></div>
+        <p>producto2</p>
+        <input class="btn btn-default" onclick="cambiarValor(this);imprimirSaldo(this);"value="Comprar" />
+
+    </div>
+    <div>
+        <p id="mensaje" name="miP"></p>
+        @ViewData["Nombre"]
+    </div>
+</div>

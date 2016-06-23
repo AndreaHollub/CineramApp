@@ -1,0 +1,41 @@
+﻿body {
+}
+*{
+    position:relative;
+}
+.divImg {
+    width: 300px;
+    position: absolute;
+    left: 200px;
+    top:0px;
+}
+.divProducto{ 
+    background-color:grey;
+    width:100px;
+    height:100px;
+
+}
+img{
+    width:100px;
+    height:100px;
+}
+.flotador{
+    position:relative
+}
+.logoIMG{
+    top:0px;
+    width:150px;
+    height:80px;
+    position:relative;
+}
+.logoIMGbarNav{
+    position:center;
+    width:150px;
+    height:80px;
+}
+h2{
+    color:deeppink;
+}
+h1{
+    color:hotpink;
+}
